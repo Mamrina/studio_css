@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    /* padding: 35px; */
+}
+
+.wrapper {
+    max-width: 1062px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    max-width: 88.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    #nav-top ul {
+        width: 100%;
+    }
+    #nav-top .wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+    #global-posts .wrapper article {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+/* ----- pas satisfaite du responsive de ma nav-top ----- */
+@media (max-width: 374px) {
+    #header h1 {
+        margin-bottom: 10px;
+    }
+    #nav-top ul li {
+        margin-left: 0;
+        width: 100%;
+    }
+    #article-1 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+#nav-top li {
+    margin-left: 50px;
+}
+
+#nav-top li:nth-child(-n+1) {
+    margin-left: 0;
+}
+
+#nav-top ul {
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article img {
+    width: 100%;
+}
+
+article {
+    width: 42%;
+    margin-top: 132px;
+    line-height: 24px;
+}
+
+#article-1 {
+    margin-bottom: 100px;
+}
+
+#article-1 {
+    width: 100%;
+}
+
+#article-1 img {
+    margin-bottom: 75px;
+}
+
+.upper {
+    color: #858585;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-top: 27px;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#posts h2 {
+    margin-top: 32px;
+    font-size: 30px;
+}
+
+#more {
+    text-align: center;
+}
+
+#more a {
+    display: inline-block;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 16px 20px;
+    margin-top: 107px;
+    transition: .5s ease color, .5s ease background-color;
+}
+
+#more a:hover,
+#more a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 41px 0;
+    margin-top: 80px;
+    background-color: #f0f0f0;
+}
+
+#footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer nav li {
+    margin-right: 30px;
+}
+
+#footer .social ul {
+    display: flex;
+}
+
+#footer li:nth-child(2) {
+    margin-right: 0;
+}
+
+/* -------- je ne réussi pas à centrer uniquement les li de .social -------- */
+@media (max-width: 367px) {
+    #footer nav {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.social a {
+    padding: 10px;
+}
+
+/* --------------------------- */
+/* ----- page full-width ----- */
+/* --------------------------- */
+#cover {
+    max-width: 88.5%;
+    margin-top: 164px;
+}
+
+.grass {
+    font-weight: bold;
+}
+
+.interlign {
+    margin-top: 20px;
+}
+
+#wood .wood-1{
+    margin-top: 76px;
+}
+
+#wood .wood-snow {
+    margin-top: 63px;
+}
+
+.italic {
+    width: 95%;
+    font-style: italic;
+    padding: 30px 10px;
+    margin-left: 2%;
+    text-align: left;
+}
+
+section {
+    margin-top: 100px;
+    background-color: #f0f0f0;
+}
+
+section h2 {
+    margin-bottom: 93px;
+}
+
+.upper p {
+    padding-top: 60px;
+}
+
+.space-1 {
+    margin-top: 30px;
+}
+
+.space-2 {
+    margin-top: 50px;
+}
+
+#slide ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+#slide h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+    #cover {
+        margin-top: 0;
+    }
+    article {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 546px) {
+    .upper p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #slide ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+form {
+    border: solid 1px #f0f0f0;
+    padding: 20px 30px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
